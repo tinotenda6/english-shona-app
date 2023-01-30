@@ -1,0 +1,9 @@
+// Import your Client Component
+import Welcome from "../src/welcome";
+
+
+export default function Page() {
+  // Fetch data directly in a Server Component
+  // Forward fetched data to your Client Component
+  return <Welcome/>;
+}
