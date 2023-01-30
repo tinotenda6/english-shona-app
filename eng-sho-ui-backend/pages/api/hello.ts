@@ -14,7 +14,7 @@ export default async function handler(
   res:NextApiResponse
 ) {
  
-  const allUsers = await prisma.words.findMany()
+  const allUsers = await prisma.words.findMany();
   
     
   res.status(200).json(allUsers);
