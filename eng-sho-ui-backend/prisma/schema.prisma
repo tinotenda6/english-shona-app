@@ -13,3 +13,9 @@ model words {
   english String @db.VarChar(512)
   shona   String @db.VarChar(512)
 }
+
+model phrases {
+  id      Int    @id @default(autoincrement()) @db.UnsignedInt
+  english String @db.VarChar(500)
+  shona   String @db.VarChar(500)
+}

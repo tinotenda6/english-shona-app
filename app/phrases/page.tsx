@@ -1,8 +1,8 @@
 // Import your Client Component
-import Cards from './Cards';
+import Cards from '../wordcard/Cards';
 
-async function getDataWords() {
-    const res = await fetch(`https://eng-sho-ui-backend.vercel.app/api/words`,  { next: { revalidate: 86400 } });
+async function getPhrases() {
+    const res = await fetch(`https://eng-sho-ui-backend.vercel.app/api/phrases`,  { next: { revalidate: 86400 } });
     //  Recommendation: handle errors
      if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary
@@ -13,7 +13,7 @@ async function getDataWords() {
   }
 export default async function Page() {
   // Fetch data directly in a Server Component
-  const words = await getDataWords();
+  const words = await getPhrases();
   // Forward fetched data to your Client Component
   return <Cards words={words}/>;
 }

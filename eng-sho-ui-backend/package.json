@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "vercel deploy",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@next/font": "13.1.6",

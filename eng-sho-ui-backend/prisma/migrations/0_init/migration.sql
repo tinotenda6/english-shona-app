@@ -7,3 +7,12 @@ CREATE TABLE `words` (
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
+-- CreateTable
+CREATE TABLE `phrases` (
+    `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+    `english` VARCHAR(500) NOT NULL,
+    `shona` VARCHAR(500) NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+

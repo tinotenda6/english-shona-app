@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/hello.ts", "lib/prisma.js", "../tr.ts",],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/words.ts", "lib/prisma.js", "../tr.ts",],
   "exclude": ["node_modules"]
 }

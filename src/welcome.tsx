@@ -46,9 +46,9 @@ return (
           <Typography>Phrases</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+        <Typography>
+            Here you get to learn new shona phrases in a quizlet like format. 
+            <Link href="/phrases">this page!</Link>
           </Typography>
         </AccordionDetails>
       </Accordion>
